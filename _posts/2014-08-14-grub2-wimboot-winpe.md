@@ -7,9 +7,9 @@ tags: [grub2, wimboot, winpe]
 ---
 {% include JB/setup %}
 
-I've recently added support for booting WinPE images to my grub2 multipass usbkey (https://github.com/Thermionix/multipass-usb)
+I've recently added support for booting WinPE images to my [grub2 multipass usbkey](https://github.com/Thermionix/multipass-usb)
 
-Using wimboot (http://ipxe.org/wimboot) I can loopback Microsoft Diagnostics and Recovery Toolset (DaRT) iso files and boot them directly off the usbkey
+Using [wimboot](http://ipxe.org/wimboot) I can loopback Microsoft Diagnostics and Recovery Toolset (DaRT) iso files and boot them directly off the usbkey
 
 	# Loopback and boot DaRT 8.1 ISO
 	menuentry "wimboot DaRT-8.1-Win-x64-6.3.9600.iso" {
