@@ -5,7 +5,7 @@ tags: [grub2, wimboot, winpe]
 ---
 {% include JB/setup %}
 
-I've recently added support for booting WinPE images to my [grub2 multipass usbkey](https://github.com/Thermionix/multipass-usb)
+I've recently added support for booting WinPE images to my [grub2 multipass usbkeys](https://github.com/Thermionix/multipass-usb)
 
 Using [wimboot](http://ipxe.org/wimboot) I can loopback Microsoft Diagnostics and Recovery Toolset (DaRT) iso files and boot them directly off the usbkey
 
@@ -40,6 +40,6 @@ Using [wimboot](http://ipxe.org/wimboot) I can loopback Microsoft Diagnostics an
 
 wimboot allows Windows to reuse the memory that was used to hold the RAM disk image; there is no wasted memory.
 
-The call I make in create.grub.key.sh to append it to my keys;
+The call I make in create.grub.key.sh to download/extract wimboot to the keys;
 
 `wget -qO- http://git.ipxe.org/releases/wimboot/wimboot-latest.zip | bsdtar --include wimboot-*/wimboot --strip-components 1 -C ./boot/grub -xvf-`

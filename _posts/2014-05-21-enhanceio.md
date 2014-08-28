@@ -5,7 +5,7 @@ tags: [enhanceIO, archlinux, ssd, caching]
 ---
 {% include JB/setup %}
 
-I've recently setup <a href="https://github.com/stec-inc/EnhanceIO">enhanceIO</a> on my [Arch HTPC Steambox](http://thermionix.tumblr.com/post/69854256212/arch-linux-steambox)
+I've been experimenting with <a href="https://github.com/stec-inc/EnhanceIO">enhanceIO</a>
 
 EnhanceIO uses SSDs as cache devices for traditional rotating hard disk drives to help speed up workloads on the larger slower drive.
 
@@ -29,4 +29,4 @@ Statistics are available under;
 
 `eio_cli delete -c pool`
 
-I'll be adding some performance testing stats soon.
+However I have decided to avoid using this on my main systems, as during testing several different use cases led to massive corruption.
