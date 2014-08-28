@@ -1,7 +1,9 @@
 ---
-layout: default
+layout: page
+title: Technical Musings
 ---
- 
+{% include JB/setup %}
+
 <div class="blog-index">
 {% assign page = post %}
 {% assign post = site.posts.first %}
