@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "grub2 wimboot winPE"
-description: ""
-category: 
 tags: [grub2, wimboot, winpe]
 ---
 {% include JB/setup %}
