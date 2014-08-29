@@ -13,7 +13,7 @@ After the base install, I reboot and call another script to <a href="https://git
 
 A snippet of that script;
 
-<script src="http://gist-it.sudarmuthu.com/http://github.com/Thermionix/arch-scripts/raw/master/steambox-post.sh?footer=minimal&slice=30:60"></script>
+<script src="http://gist-it.sudarmuthu.com/http://github.com/Thermionix/arch-scripts/raw/master/steambox-post.sh?footer=minimal&slice=205:247"></script>
 
 If you already have Arch installed an want to boot straight into Steam Bigpicture;
 
@@ -39,6 +39,6 @@ I'm also running a <a href="http://www.bunnings.com.au/hpm-6-outlet-powerboard-w
 
 Note: The above power-board needed to be adjusted down to detect the on-draw current of the NUC @ ~7w (most of these boards switch at about 20w)
 
-![](https://31.media.tumblr.com/ec8bb36a0c5aa227c459846e63a8a604/tumblr_inline_mxxgtifSkf1subtc5.png)
-![](https://31.media.tumblr.com/241c43f069f42c5d657fb5d186ea672a/tumblr_inline_mxxfynzb7E1subtc5.png)
-![](https://31.media.tumblr.com/fa80d94de25a21650d5d6f14df152b7e/tumblr_inline_mxxg449H7O1subtc5.jpg)
+![](/assets/mxxgtifSkf1subtc5.png)
+![](/assets/mxxfynzb7E1subtc5.png)
+![](/assets/mxxg449H7O1subtc5.jpg)
