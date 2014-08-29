@@ -7,5 +7,6 @@ tags: [grub2, usbkey, multipass]
 
 grub-multipass is a set of scripts to help manage a USB memory stick booting many GNU/Linux distribution ISO images.
 
-{% githubrepo Thermionix/multipass-usb %}
-
+<script src="/assets/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/assets/jquery.githubRepoWidget.min.js"></script>
+<div class="github-widget" data-repo="Thermionix/multipass-usb"></div>
