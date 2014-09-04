@@ -21,12 +21,12 @@ It is a reaction to the recent commercialisation of ROM project CyanogenMod
 	fdroid_apk="FDroid.apk"
 	fdroid_url="https://f-droid.org/$fdroid_apk"
 	mkdir -p system/app/
-	wget -P system/app $fdroid
-	wget $url$rom
+	wget -P system/app $fdroid_url
+	wget $rom_url
 	# add fdroid apk
-	zip -g $rom system/app/$fdroid_apk
+	zip -g $rom_zip system/app/$fdroid_apk
 	# remove unnecessary apps
-	zip -d $rom \
+	zip -d $rom_zip \
 	system/app/Browser.apk \
 	system/app/Email.apk \
 	system/app/Exchange2.apk \
@@ -38,7 +38,6 @@ It is a reaction to the recent commercialisation of ROM project CyanogenMod
 	system/app/HoloSpiralWallpaper.apk \
 	system/app/NoiseField.apk \
 	system/app/Galaxy4.apk \
-	system/priv-app/DeskClock.apk \
 	system/priv-app/OmniSwitch.apk \
 	system/priv-app/OneTimeInitializer.apk
 
