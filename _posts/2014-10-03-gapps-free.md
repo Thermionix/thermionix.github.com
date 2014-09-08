@@ -17,15 +17,19 @@ It is a reaction to the recent commercialisation of ROM project CyanogenMod
 	#!/bin/bash
 	rom_zip="omni-4.4.4-20140903-i9300-NIGHTLY.zip" #replace with latest
 	rom_device="i9300" #replace with your device
+
 	rom_url="https://dl.omnirom.org/$rom_device/$rom_zip" 
 	fdroid_apk="FDroid.apk"
 	fdroid_url="https://f-droid.org/$fdroid_apk"
+
 	mkdir -p system/app/
 	wget -P system/app $fdroid_url
 	wget $rom_url
-	# add fdroid apk
+
+	# add fdroid APK
 	zip -g $rom_zip system/app/$fdroid_apk
-	# remove unnecessary apps
+
+	# remove unnecessary APKs
 	zip -d $rom_zip \
 	system/app/Browser.apk \
 	system/app/Email.apk \
@@ -39,7 +43,8 @@ It is a reaction to the recent commercialisation of ROM project CyanogenMod
 	system/app/NoiseField.apk \
 	system/app/Galaxy4.apk \
 	system/priv-app/OmniSwitch.apk \
-	system/priv-app/OneTimeInitializer.apk
+	system/priv-app/OneTimeInitializer.apk \
+	system/priv-app/OpenDelta.apk
 
 
 ### Flashing the Rom
@@ -55,7 +60,7 @@ To ensure gapps doesn't carry over, before flashing;
 
 ### Install F-Droid
 
-If not using the customized rom above;
+If not using the customize script above;
 
 * Browser to and Install <https://f-droid.org/FDroid.apk> on your phone  
 * Alternatively load from your desktop;  
@@ -69,8 +74,6 @@ The default calendar, contacts, SMS and camera apps all work fine.
 * Web browser: [Firefox](https://f-droid.org/repository/browse/?fdfilter=firefox&fdid=org.mozilla.firefox)
 * Music: [Apollo](https://f-droid.org/repository/browse/?fdfilter=apollo&fdid=com.andrew.apollo)
 * Maps and Navigation: [OsmAnd](https://f-droid.org/repository/browse/?fdfilter=osmand&fdid=net.osmand.plus)
-* Tasks: [SimpleTask](https://f-droid.org/repository/browse/?fdfilter=simpletask&fdid=nl.mpcjanssen.simpletask)
-* Filesync: [Syncthing](https://f-droid.org/repository/browse/?fdfilter=syncthing&fdid=com.nutomic.syncthingandroid)
 * VOIP: [CSipSimple](https://f-droid.org/repository/browse/?fdfilter=sip&fdid=com.csipsimple)
 * Group Messaging: [Telegram](https://f-droid.org/repository/browse/?fdfilter=push&fdid=org.telegram.messenger)
 * Video Player: [VLC](https://f-droid.org/repository/browse/?fdfilter=vlc&fdid=org.videolan.vlc)
@@ -78,6 +81,8 @@ The default calendar, contacts, SMS and camera apps all work fine.
 #### Others
 
 * [Document Viewer](https://f-droid.org/repository/browse/?fdid=org.sufficientlysecure.viewer)
+* [SimpleTask](https://f-droid.org/repository/browse/?fdfilter=simpletask&fdid=nl.mpcjanssen.simpletask)
+* [Syncthing](https://f-droid.org/repository/browse/?fdfilter=syncthing&fdid=com.nutomic.syncthingandroid)
 * [Barcode Scanner](https://f-droid.org/repository/browse/?fdid=com.google.zxing.client.android)
 * [YouTube Downloader](https://f-droid.org/repository/browse/?fdid=dentex.youtube.downloader)
 * [Wikipedia](https://f-droid.org/repository/browse/?fdid=org.wikipedia)
@@ -90,14 +95,21 @@ The default calendar, contacts, SMS and camera apps all work fine.
 
 ### Apks from GPlay
 
-There's still a few niche apps that aren't available from fdroid that I would like to use.
-
-I currently side-load apks from <http://apps.evozi.com/apk-downloader/>
+There's still a few niche apps that aren't available from fdroid, so [download the apk](http://apps.evozi.com/apk-downloader/) and side-load.
 
 ### Add GuardianProject Fdroid Repo
+
+A [curated repository](https://guardianproject.info/apps/) of apps developed by the Guardian Project and others focused on mobile security, privacy and safety.
 
 1. Within Fdroid go to Menu > Manage Repos > New Repository
 2. Enter: https://guardianproject.info/repo
 3. Return to the main screen, and Menu > Update
 4. Verify the repo fingerprint by clicking on the repo to see the repo details view. The fingerprint you see there should match this: 59050C8155DCA377F23D5A15B77D3713400CDBD8B42FBFBE0E3F38096E68CECE. 
 
+### Battery Life
+
+Without the constant phoning home to Google servers, battery life is amazing!
+
+On an original (~26 month old) Galaxy S3 battery;
+
+![](/assets/Screenshot_2014-09-07-22-36-09.png)
