@@ -9,11 +9,7 @@ I've recently setup ArchLinux on the HTPC, and set it to boot into XBMC standalo
 
 I have a script I use to help me <a href="https://github.com/Thermionix/arch-scripts/blob/master/arch-install.sh">quickly perform a new Arch base install</a>
 
-After the base install, I reboot and call another script to <a href="https://github.com/Thermionix/arch-scripts/blob/master/steambox-post.sh">setup the environment</a>
-
-A snippet of that script;
-
-<script src="http://gist-it.sudarmuthu.com/http://github.com/Thermionix/arch-scripts/raw/master/steambox-post.sh?footer=minimal&slice=205:247"></script>
+After the base install, I reboot and call another script to <a href="https://github.com/Thermionix/arch-scripts/blob/master/arch-post.sh">setup the environment</a>
 
 If you already have Arch installed an want to boot straight into Steam Bigpicture;
 
