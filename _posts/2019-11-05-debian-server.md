@@ -38,7 +38,7 @@ setup <a href="https://wiki.debian.org/sudo">sudo</a> and add your user to sudoe
 	exec su -l $USER
 
 	#test sudo by disabling root user login
-	sudo passwd -l root
+	sudo passwd --lock root
 
 	sudo apt-get -y install nano tmux rsync bash-completion
 
